@@ -26,7 +26,7 @@
             var partA = match[1];
             partA=partA.trim();
             // Get partB as a fixed length of 4 characters after class="emoji"
-            var partB = match[2].slice(0, 4);
+            var partB = match[2].trim().slice(0, 4);
             // Construct the URL with partA and partB as parameters
             var url = 'http://pan.baidu.com/s/' + partA + '?pwd=' + partB;
             // Create a button element to open the URL
